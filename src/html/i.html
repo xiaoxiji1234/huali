@@ -6,18 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../iconfont/iconfont.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2252304_ki6tp5znn6.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2252304_xcufssar7fh.css">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../../node_modules/swiper/swiper-bundle.min.css">
     <script src="../jquery/jquery.min.js"></script>
     <script src="../validation/dist/jquery.validate.min.js"></script>
     <script src="../js/utils.js"></script>
+    <script src="../../node_modules/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
     <div class="box">
+        <!-- 头部 -->
         <div class="top clearFix">
             <div class="topHeader clearFix">
+                <!-- 顶部菜单栏 -->
                 <p>
                     <span><i class="iconfont icon-shoucang"></i>收藏鲜花网</span>
                     <span class="activeS" id="wei"><i class="iconfont icon-weixin"></i>关注微信</span>
@@ -63,23 +66,93 @@
 
             </div>
         </div>
+        <!-- logo部分 -->
         <div class="logo">
-            <h1><img src="../ststic/images/logo_03.jpg" alt=""></h1>
+            <h1></h1>
+            <!-- 搜索框 -->
             <div class="search">
+                <i class="iconfont icon-sousuo"></i>
                 <input type="text" placeholder="商品关键词"><button>搜索</button>
+                <p><a href="">红玫瑰</a><a href="">永生花</a>
+                    <a href="">生日鲜花</a>
+                    <a href="">礼品卡</a>
+                </p>
             </div>
+            <!-- 联系客服 -->
             <div class="right">
                 <span class="telNumber"><i class="iconfont icon-icon_dianhua"></i>400-819-8188</span>
                 <span class="links"><i class="iconfont icon-kefu"></i>在线客服</span>
             </div>
         </div>
+
+        <!-- 内容区域 -->
         <div class="content clearFix">
+            <div class="nav clearFix">
+                <div class="allClassify">
+                    <i class="iconfont icon-caidan"></i><span>所有分类</span>
+                </div>
+                <ul class="classify">
+                    <li>鲜花</li>
+                    <li>永生花</li>
+                    <li>蛋糕</li>
+                    <li>礼品</li>
+                    <li>巧克力</li>
+                    <li>花语大全</li>
+                    <li>企业团购</li>
+                    <li>设计师甄选鲜花</li>
+                </ul>
+            </div>
+            <!-- 轮播图 -->
+            <div class="banner">
+                <div class="swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-css-mode">
+                    <div class="swiper-wrapper" id="swiper-wrapper-3e9b6f9ac577dbd5" aria-live="polite">
+                        <div class="swiper-slide swiper-slide-active" role="group"><img src="https://img02.hua.com/slider/20_birthday_pc.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide swiper-slide-next" role="group"><img src="https://img02.hua.com/slider/20_sheshou_banner_pc.jpg" alt=""></div>
+                        <div class="swiper-slide" role="group"><img src="https://img02.hua.com/slider/20_youflower_pc.jpg" alt=""></div>
+                        <div class="swiper-slide" role="group"><img src="https://img02.hua.com/slider/20_xmas_banner_pc.jpg" alt=""></div>
+                        <div class="swiper-slide" role="group"><img src="https://img02.hua.com/slider/20_longtou.jpg" alt=""></div>
+                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev swiper-button-disabled"></div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-bullets">
+                        <span class="swiper-pagination-bullet swiper-pagination-bullet-active">
 
-        </div>
-        <div class="bottom">
+                        </span>
+                        <span class="swiper-pagination-bullet">
+                        </span>
+                        <span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                </div>
+            </div>
 
+            <div class="bottom">
+
+            </div>
         </div>
-    </div>
+        <script>
+            var swiper = new Swiper(
+                '.swiper-container', {
+                    cssMode: true,
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    pagination: {
+                        el: '.swiper-pagination'
+                    },
+                    mousewheel: true,
+                    keyboard: true,
+                    autoplay: true,
+                    loop: true
+                }
+
+            );
+        </script>
 </body>
 
 </html>

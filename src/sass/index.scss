@@ -197,28 +197,62 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        h1 {
+            width: 240px;
+            height: 65px;
+            background: url('../ststic/images/首页图标.png') no-repeat;
+            background-position: 0 -244px;
+            margin-top: 20px;
+        }
         .search {
+            width: 456px;
+            border: 2px solid #ff734c;
+            height: 50px;
+            border-radius: 114px;
+            i {
+                display: inline-block;
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                color: #b4babf;
+            }
             input {
-                width: 240px;
-                height: 35px;
-                border: 1px solid #ff734c;
+                width: 280px;
+                height: 50px;
                 padding: 5px;
                 box-sizing: border-box;
+                border: 0;
+                outline: 0;
+                transform: translateY(-2px);
+                &::placeholder {
+                    color: #b4babf;
+                }
             }
             button {
-                width: 80px;
-                height: 35px;
+                width: 120px;
+                height: 50px;
                 background: #ff6a00;
                 color: #fff;
                 border: 0;
                 vertical-align: top;
                 outline-style: none;
                 cursor: pointer;
+                border-radius: 30px;
+            }
+            p {
+                margin-left: 50px;
+                margin-top: 12px;
+                a {
+                    color: #b4babf;
+                    font-size: 12px;
+                    margin-right: 25px;
+                }
             }
         }
         .right {
             span {
-                font-size: 16px;
+                font-size: 12px;
                 padding: 0 20px;
                 color: #737388;
                 &:first-child {
@@ -233,7 +267,7 @@
                 .iconfont {
                     color: #ff734c;
                     margin-right: 10px;
-                    font-size: 24px;
+                    font-size: 20px;
                 }
             }
         }
@@ -242,5 +276,41 @@
         width: 100%;
         min-height: 300px;
         background: #f2f2f2;
+        .nav {
+            width: 1215px;
+            margin: 0 auto;
+            .allClassify,
+            .classify,
+            .classify li {
+                float: left;
+            }
+            .allClassify {
+                width: 240px;
+                height: 50px;
+                background: #ff481e;
+                color: #fff;
+                line-height: 50px;
+                font-size: 18px;
+                font-weight: bold;
+                i {
+                    margin-left: 24px;
+                    margin-right: 12px;
+                }
+            }
+            .classify {
+                li {
+                    padding: 0 28px;
+                    line-height: 50px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    &:hover {
+                        color: #ff481e;
+                    }
+                }
+            }
+        }
+        .banner {
+            width: 100%;
+        }
     }
 }
