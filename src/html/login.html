@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../ststic/iconfont/iconfont.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../jquery/jquery.min.js"></script>
+    <script src="../validation/dist/jquery.validate.min.js"></script>
+    <script src="../js/utils.js"></script>
+</head>
+
+<body>
+    <div class="box">
+        <div class="top clearFix">
+            <div class="topHeader clearFix">
+                <p>
+                    <span><i class="iconfont icon-shoucang"></i>收藏鲜花网</span>
+                    <span class="activeS" id="wei"><i class="iconfont icon-weixin"></i>关注微信</span>
+
+
+                    <span class="activeS" id="app"><i class="iconfont icon-shouji1"></i>花礼网app</span>
+
+                </p>
+                <ul class="menu clearFix">
+                    <li><span>你好，请<a href="../html/login.html">登录</a></span>
+                    </li>
+                    <li><span><a href="../html/register.html">注册</a></span></li>
+                    <li><span>订单查询</span> </li>
+                    <li class="activeLi" id="present"><span>我的花礼</span> </li>
+                    <li class="activeLi" id="severs">
+                        <span>客户服务<i class="iconfont icon-below-s"></i></span>
+                        <ul class="sever">
+                            <li>在线付款</li>
+                            <li>帮助中心</li>
+                            <li>售后服务</li>
+                            <li>配送范围</li>
+                            <li>留言反馈</li>
+                        </ul>
+                    </li>
+                    <li class="activeLi clearFix" id="car">
+                        <p><span><i class="iconfont icon-gouwuche"></i>购物车<b class="num">(0)</b><i class="iconfont icon-below-s"></i></span></p>
+                        <div class="cars">
+                            您的购物车中没有商品，先去选购吧！
+                        </div>
+                    </li>
+                    <li><span>中国鲜花礼品网:中国鲜花网领先品牌</span> </li>
+                </ul>
+                <div class="weiBox clearFix">
+                    <p><img src="../ststic/images/wei.jpg" alt=""><br>
+                        <span>扫码关注</span><br>
+                        <span>回复“礼物”更多惊喜</span></p>
+
+                </div>
+                <div class="appBox clearFix">
+                    <p><img src="../ststic/images/app.jpg" alt=""><br>
+                        <span>新人专享100元APP礼包</span></p>
+                </div>
+
+            </div>
+        </div>
+        <div class="logo">
+            <h1><img src="../ststic/images/logo_03.jpg" alt=""></h1>
+            <div class="search">
+                <input type="text" placeholder="商品关键词"><button>搜索</button>
+            </div>
+            <div class="right">
+                <span class="telNumber"><i class="iconfont icon-icon_dianhua"></i>400-819-8188</span>
+                <span class="links"><i class="iconfont icon-kefu"></i>在线客服</span>
+            </div>
+        </div>
+        <div class="content clearFix">
+            <div class="con clearFix">
+                <div class="loginBox clearFix">
+                    <p class="lBtn clearFix"><button id="telBtn" class="activeBtn lgBtn">账号登录</button><button id="weiBtn" class="lgBtn">微信登录</button></p>
+                    <ul class="clearFix" id="changeLi">
+                        <li class="clearFix showLi">
+                            <form action="" id="loginEmail">
+                                <p>
+                                    <i class="iconfont icon-shouji"></i><input type="text" placeholder="请输入手机号/邮箱号" name="tel" id="tel">
+
+                                </p>
+
+
+                                <p><i class="iconfont icon-jiesuo"></i><input type="password" placeholder="请输入密码" name="password" id="password">
+                                </p>
+                                <p>
+                                    <button id="loginBtn">登录</button>
+                                </p>
+                            </form>
+                            <p><a href="">忘记密码?</a></p>
+                        </li>
+                        <li class="clearFix" id="wei">
+                            <p>
+                                <img src="../ststic/images/weixinCode.jpg" alt="">
+
+                            </p>
+                            <p>微信扫码，快速登录</p>
+                        </li>
+                    </ul>
+                    <div class="footer clearFix">
+                        <p>
+                            <span>
+            <i class="iconfont icon-qq"></i>QQ
+        </span>
+                            <span>
+            <i class="iconfont icon-zhifubao"></i>支付宝
+        </span>
+                        </p>
+                        <p><a href="./register.html">注册账号></a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <ul class="clearFix">
+                <li><a href="">首页</a> </li>
+                <li><a href="">关于我们</a></li>
+                <li><a href="">媒体报道</a></li>
+                <li><a href="">联系方式</a></li>
+                <li><a href="">企业团购</a></li>
+                <li><a href="">花店入驻</a></li>
+                <li><a href="">友情链接</a></li>
+                <li><a href="">在线补款</a></li>
+                <li><a href="">为什么选择中国鲜花礼品网</a></li>
+            </ul>
+            <div class="icon">
+                <img src="https://img02.hua.com/pc/assets/img/slogan.png" alt="">
+                <a href=""><img src="https://img02.hua.com/pc/assets/img/100.jpg" alt=""></a>
+                <a href=""><img src="https://img02.hua.com/pc/assets/img/bico1.jpg" alt=""></a>
+                <a href=""><img src="https://szcert.ebs.org.cn/Images/govIcon.gif" alt=""></a>
+            </div>
+            <div class="copy">
+                <p><span>中国花卉协会会员</span>
+                    <span>中国电子商务协会会员 </span>
+                    <span class="s44">ICP经营许可证：粤B2-20050744</span>
+                    <span> 粤ICP备09171662号</span>
+                    <span>粤公网安备44030502000373号</span>
+                    <span>Copyright&copy;2005-2020</span></p>
+                <p>
+                    www.hua.com 深圳市百易信息技术有限公司
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

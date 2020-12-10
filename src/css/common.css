@@ -1,0 +1,100 @@
+/* 统筹文件 (公共部分)*/
+
+@charset "utf-8";
+html,
+body,
+div,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+a,
+form,
+input,
+select,
+option,
+label,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+i,
+em,
+strong,
+img,
+table,
+tr,
+td,
+thead,
+tbody,
+tfoot,
+th,
+section,
+article,
+aside,
+header,
+footer,
+nav,
+figure,
+main,
+hgroup,
+mark,
+time,
+dialog,
+embed {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+b,
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+.clearFix::after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img {
+    vertical-align: top;
+    border: 0;
+}
