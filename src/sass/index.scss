@@ -379,6 +379,7 @@
                 left: 392px;
                 top: 50px;
                 z-index: 55;
+                display: none;
                 .preserve {
                     margin-left: 30px;
                     margin-bottom: 30px;
@@ -405,7 +406,97 @@
                         }
                     }
                 }
-                .cake {}
+                .cake {
+                    margin-left: 30px;
+                    margin-bottom: 30px;
+                    display: none;
+                    h3 {
+                        line-height: 50px;
+                    }
+                    dl {
+                        float: left;
+                        margin-right: 30px;
+                        cursor: pointer;
+                        margin-bottom: 20px;
+                        dd {
+                            margin-bottom: 10px;
+                            img {
+                                width: 105px;
+                                height: 60px;
+                            }
+                        }
+                        dt {
+                            text-align: center;
+                            font-size: 12px;
+                            color: #71797f;
+                        }
+                        &:hover {
+                            color: #ff6a00;
+                        }
+                    }
+                    a {
+                        font-size: 12px;
+                        color: #71797f;
+                        margin-right: 15px;
+                        &:hover {
+                            color: #ff6a00;
+                        }
+                    }
+                }
+                .present {
+                    margin-left: 30px;
+                    margin-bottom: 30px;
+                    display: none;
+                    div {
+                        font-size: 12px;
+                        color: #71797f;
+                        &:first-child {
+                            dl {
+                                float: left;
+                                margin-right: 30px;
+                                cursor: pointer;
+                                margin-bottom: 20px;
+                                dd {
+                                    margin-bottom: 10px;
+                                    img {
+                                        width: 105px;
+                                        height: 60px;
+                                    }
+                                }
+                                dt {
+                                    text-align: center;
+                                }
+                                &:hover {
+                                    color: #ff6a00;
+                                }
+                            }
+                        }
+                        &:last-child {
+                            dl {
+                                float: left;
+                                margin-right: 50px;
+                                cursor: pointer;
+                                margin-bottom: 20px;
+                                dd {
+                                    margin-bottom: 10px;
+                                    img {
+                                        width: 80px;
+                                        height: 80px;
+                                    }
+                                }
+                                dt {
+                                    text-align: center;
+                                }
+                                &:hover {
+                                    color: #ff6a00;
+                                }
+                            }
+                        }
+                    }
+                    h3 {
+                        line-height: 50px;
+                    }
+                }
             }
         }
         .banner {
@@ -554,6 +645,96 @@
                             font-size: 16px;
                             color: #71797f;
                         }
+                    }
+                }
+            }
+        }
+        .loveBox {
+            width: 100%;
+            background: #f7f9fa;
+            .loveFlower {
+                width: 1215px;
+                margin: 0 auto;
+                padding-top: 40px;
+                h3 {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-bottom: 14px;
+                    span {
+                        &:first-child {
+                            font-size: 28px;
+                            font-weight: bold;
+                            padding: 0 17px;
+                            border-right: 1px solid #71797f;
+                        }
+                        &:last-child {
+                            padding-left: 16px;
+                        }
+                    }
+                    p {
+                        &:last-child {
+                            color: #71797f;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                div {
+                    float: left;
+                    &:last-child {
+                        width: 920px;
+                        dl {
+                            float: left;
+                            width: 210px;
+                            height: 320px;
+                            margin-right: 16px;
+                            margin-bottom: 28px;
+                            &:first-child,
+                            &:nth-of-type(5) {
+                                margin-left: 16px;
+                            }
+                            dd {
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            dt {
+                                text-align: center;
+                                background: #fff;
+                                p {
+                                    line-height: 26px;
+                                    &:first-child {
+                                        font-size: 16px;
+                                        color: #71797f;
+                                    }
+                                    &:nth-of-type(2) {
+                                        font-size: 14px;
+                                        font-weight: bold;
+                                    }
+                                    &:last-child {
+                                        font-size: 14px;
+                                        color: #71797f;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .loveImg {
+                    position: relative;
+                    p {
+                        position: absolute;
+                        bottom: 26px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 236px;
+                        height: 56px;
+                        border: 2px #efeeeb solid;
+                        text-align: center;
+                        line-height: 56px;
+                        color: #fff;
+                        font-weight: bold;
+                        font-size: 20px;
+                        cursor: pointer;
                     }
                 }
             }
