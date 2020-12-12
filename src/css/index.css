@@ -1075,6 +1075,7 @@
 .box .content .cakeBox {
   width: 100%;
   background: #e9ecf0;
+  padding-bottom: 60px;
 }
 
 .box .content .cakeBox .cakes {
@@ -1254,7 +1255,8 @@
 
 .box .content .presentBox {
   width: 100%;
-  background: #e9ecf0;
+  background: #f7f9fa;
+  padding-bottom: 60px;
 }
 
 .box .content .presentBox .presents {
@@ -1288,6 +1290,9 @@
 .box .content .presentBox .presents .presentCon {
   width: 1215px;
   margin: 0 auto;
+}
+
+.box .content .presentBox .presents .presentCon .presentList {
   background: #FFF;
 }
 
@@ -1309,75 +1314,61 @@
   color: #ff6a00;
 }
 
-.box .content .presentBox .presents div {
-  margin-top: 10px;
-}
-
-.box .content .presentBox .presents div dl {
+.box .content .presentBox .presents .presentCon .presentList div dl {
   float: left;
-  margin-right: 80px;
-  margin-bottom: 40px;
-}
-
-.box .content .presentBox .presents div dl:first-child {
-  margin-left: 10px;
-}
-
-.box .content .presentBox .presents div dl:last-child {
-  margin-right: 0;
-}
-
-.box .content .presentBox .presents div dl dd {
-  margin-bottom: 20px;
-}
-
-.box .content .presentBox .presents div dl dd img {
   width: 100px;
-  height: 60px;
+  margin-right: 20px;
+  cursor: pointer;
+  margin-right: 50px;
 }
 
-.box .content .presentBox .presents div dl dt {
+.box .content .presentBox .presents .presentCon .presentList div dl:hover {
+  color: #ff734c;
+}
+
+.box .content .presentBox .presents .presentCon .presentList div dl:first-child {
+  margin-left: 20px;
+}
+
+.box .content .presentBox .presents .presentCon .presentList div dl dd img {
+  width: 100%;
+}
+
+.box .content .presentBox .presents .presentCon .presentList div dl dt {
   text-align: center;
-}
-
-.box .content .presentBox .presents div dl dt a {
-  color: #71797f;
   font-size: 12px;
+  color: #737388;
 }
 
-.box .content .presentBox .presents div dl dt a:hover {
-  color: #ff6a00;
-}
-
-.box .content .presentBox .presentPro {
+.box .content .presentBox .presentPro1 {
   text-align: center;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-.box .content .presentBox .presentPro dl {
+.box .content .presentBox .presentPro1 dl {
   padding: 8px;
   width: 220px;
   background: #fff;
   border-radius: 10px;
 }
 
-.box .content .presentBox .presentPro dl:hover {
+.box .content .presentBox .presentPro1 dl:hover {
   color: #ff6a00;
 }
 
-.box .content .presentBox .presentPro dl dd {
+.box .content .presentBox .presentPro1 dl dd {
   cursor: pointer;
 }
 
-.box .content .presentBox .presentPro dl dd img {
+.box .content .presentBox .presentPro1 dl dd img {
   width: 220px;
   height: 280px;
   border-radius: 10px;
 }
 
-.box .content .presentBox .presentPro dl dt h4 {
+.box .content .presentBox .presentPro1 dl dt h4 {
   width: 200px;
   margin: 0 auto;
   overflow: hidden;
@@ -1386,13 +1377,224 @@
   margin-bottom: 10px;
 }
 
-.box .content .presentBox .presentPro dl dt p:first-child {
+.box .content .presentBox .presentPro1 dl dt p:first-child {
   font-size: 14px;
   font-weight: bold;
 }
 
-.box .content .presentBox .presentPro dl dt p:last-child {
+.box .content .presentBox .presentPro1 dl dt p:last-child {
   font-size: 12px;
   color: #737476;
   margin-top: 10px;
+}
+
+.box .content .evaBox {
+  width: 100%;
+  background: #e9ecf0;
+  padding-bottom: 60px;
+}
+
+.box .content .evaBox .evl {
+  width: 1215px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.box .content .evaBox .evl h3 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 14px;
+}
+
+.box .content .evaBox .evl h3 span:first-child {
+  font-size: 28px;
+  font-weight: bold;
+  padding: 0 17px;
+  border-right: 1px solid #71797f;
+}
+
+.box .content .evaBox .evl h3 span:last-child {
+  padding-left: 16px;
+}
+
+.box .content .evaBox .evl h3 p:last-child {
+  color: #71797f;
+  font-size: 14px;
+}
+
+.box .content .evaBox .evl .evlList ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.box .content .evaBox .evl .evlList ul li {
+  width: 265px;
+  height: 160px;
+  background-color: #fff;
+  padding: 16px 8px;
+  border-radius: 10px;
+}
+
+.box .content .evaBox .evl .evlList ul li .text {
+  float: left;
+  width: 138px;
+}
+
+.box .content .evaBox .evl .evlList ul li .text p i {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50% 50%;
+  background: url("https://img02.hua.com/pc/assets/img/avatar_default_04.jpg");
+  background-size: 100%, 100%;
+}
+
+.box .content .evaBox .evl .evlList ul li .text p span {
+  line-height: 25px;
+  vertical-align: top;
+  margin-left: 12px;
+  font-size: 12px;
+  color: #71797f;
+}
+
+.box .content .evaBox .evl .evlList ul li .text p:nth-of-type(2) {
+  font-size: 14px;
+  margin: 12px 0 45px 0;
+}
+
+.box .content .evaBox .evl .evlList ul li .text p:nth-of-type(3), .box .content .evaBox .evl .evlList ul li .text p:last-child {
+  font-size: 12px;
+  color: #c4c0d5;
+}
+
+.box .content .evaBox .evl .evlList ul li .imgItem {
+  float: right;
+}
+
+.box .content .evaBox .evl .evlList ul li .imgItem img {
+  width: 118px;
+  border-radius: 10px;
+  height: 160px;
+}
+
+.box .content .consultBox {
+  width: 100%;
+  background: #f7f9fa;
+  padding-bottom: 60px;
+  padding-top: 40px;
+}
+
+.box .content .consultBox .consult {
+  width: 1215px;
+  margin: 0 auto;
+  background: #fff;
+  padding-bottom: 15px;
+}
+
+.box .content .consultBox .consult h4 {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #e9ecf0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box .content .consultBox .consult h4 span:first-child {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 32px;
+}
+
+.box .content .consultBox .consult h4 span:last-child {
+  font-size: 14px;
+  color: #71797f;
+  margin-right: 32px;
+}
+
+.box .content .consultBox .consult div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box .content .consultBox .consult div ul li {
+  list-style: disc;
+  line-height: 30px;
+  height: 30px;
+}
+
+.box .content .consultBox .consult div ul li a {
+  font-size: 12px;
+  color: #232628;
+}
+
+.box .content .consultBox .consult div ul li a:hover {
+  color: #ff6a00;
+}
+
+.box .content .consultBox .consult div ul:first-child {
+  margin-left: 40px;
+}
+
+.box .content .consultBox .chBox {
+  width: 1215px;
+  margin: 0 auto;
+  margin-top: 47px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #e9ecf0;
+}
+
+.box .content .consultBox .chBox ul {
+  display: flex;
+  width: 1215px;
+  justify-content: space-between;
+}
+
+.box .content .consultBox .chBox ul li {
+  width: 25%;
+}
+
+.box .content .consultBox .chBox ul li i {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url("../ststic/images/首页图标.png") no-repeat;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+.box .content .consultBox .chBox .ch1 {
+  padding: 40px 0;
+}
+
+.box .content .consultBox .chBox .ch1 li:nth-of-type(1) i {
+  background-position: 0 -136px;
+}
+
+.box .content .consultBox .chBox .ch1 li:nth-of-type(2) i {
+  background-position: -50px -136px;
+}
+
+.box .content .consultBox .chBox .ch1 li:nth-of-type(3) i {
+  background-position: -100px -136px;
+}
+
+.box .content .consultBox .chBox .ch1 li:nth-of-type(4) i {
+  background-position: -150px -136px;
+}
+
+.box .content .consultBox .chBox .ch2 li:nth-of-type(1) i {
+  background-position: -200px -136px;
+}
+
+.box .content .consultBox .chBox .ch2 li:nth-of-type(2) i {
+  background-position: -250px -136px;
+}
+
+.box .content .consultBox .chBox .ch2 li:nth-of-type(3) i {
+  background-position: -300px -136px;
+}
+
+.box .content .consultBox .chBox .ch2 li:nth-of-type(4) i {
+  background-position: -350px -136px;
 }
