@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer" />
     <title>Document</title>
+    <link rel="shortcut icon" href="//www.hua.com/favicon.ico" />
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_2252304_66gxbgk9ocn.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2252304_8ze02f9296n.css">
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../../node_modules/swiper/swiper-bundle.min.css">
     <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
@@ -73,7 +75,7 @@
                 <!-- 搜索框 -->
                 <div class="search">
                     <i class="iconfont icon-sousuo"></i>
-                    <input type="text" placeholder="商品关键词"><button>搜索</button>
+                    <input type="text" id="seText" placeholder="商品关键词"><button id="selectBtn">搜索</button>
                     <p><a href="">红玫瑰</a><a href="">永生花</a>
                         <a href="">生日鲜花</a>
                         <a href="">礼品卡</a>
@@ -119,13 +121,13 @@
                                 <span>郁金香</span>
                                 <span>马蹄莲</span>
                             </div>
-                            <div class="activeDiv">
+                            <div class="activeDiv" id="forever">
                                 <h4><span>永生花</span> <i>></i></h4>
                                 <span>永生瓶花</span>
                                 <span>经典花盒</span>
                                 <span>特色永生花</span>
                             </div>
-                            <div class="activeDiv">
+                            <div class="activeDiv" id="cake">
                                 <h4><span>蛋糕</span><i>></i> </h4>
                                 <span>元祖</span>
                                 <span>幸福西饼</span>
@@ -134,7 +136,7 @@
                                 <span>窝夫小子</span>
                                 <span>BONCAKE</span>
                             </div>
-                            <div class="activeDiv">
+                            <div class="activeDiv" id="presented">
                                 <h4><span>礼品</span><span>/</span><span>公仔</span><span>/</span><span>绿植</span><i>></i></h4>
                             </div>
                         </div>
@@ -457,11 +459,11 @@
                 <p><i></i><span>200%退赔承诺</span></p>
                 <p><i></i><span>最近395026条评价</span></p>
             </div>
-            <!-- 需要渲染 -->
+            <!-- 圣诞新品 -->
             <div class="newPro">
                 <img src="https://img02.hua.com/zhuanti/xmas/2020/20_xmas_mbanner_pc.jpg?v2" alt="">
                 <ul>
-                    <li>
+                    <!-- <li>
                         <div>
                             <h4>圣诞节畅销款</h4>
                             <p>圣诞定制新品</p>
@@ -496,7 +498,7 @@
                         </div>
                         <img src="https://img02.hua.com/zhuanti/xmas/2020/9012488.jpg" alt="">
 
-                    </li>
+                    </li> -->
                 </ul>
             </div>
 
@@ -551,8 +553,8 @@
                         <img src="https://img02.hua.com/pc/pimg/home/home_floor_lover.png" alt="">
                         <p>爱情鲜花专区 ></p>
                     </div>
-                    <div>
-                        <dl>
+                    <div class="loveItem">
+                        <!-- <dl>
                             <dd>
                                 <img src="https://img01.hua.com/uploadpic/newpic/9010966.jpg_220x240.jpg" alt="">
                             </dd>
@@ -663,7 +665,7 @@
                         </p>
                         <p>已售 12.9万 件</p>
                         </dt>
-                        </dl>
+                        </dl> -->
                     </div>
                 </div>
 
@@ -680,8 +682,8 @@
                         <img src="https://img02.hua.com/pc/pimg/home/home_floor_elder.png" alt="">
                         <p>送长辈鲜花专区 ></p>
                     </div>
-                    <div>
-                        <dl>
+                    <div class="elderItem">
+                        <!-- <dl>
                             <dd>
                                 <img src="https://img01.hua.com/uploadpic/newpic/9012452.jpg_220x240.jpg" alt="">
                             </dd>
@@ -692,8 +694,8 @@
                                     <p>
                                         <span>￥</span><span>296</span>
                         </p>
-                        <p>已售 6.9万 件</p>
-                        </dt>
+                        <p>已售 6.9万 件</p> -->
+                        <!-- </dt>
                         </dl>
                         <dl>
                             <dd>
@@ -792,7 +794,7 @@
                         </p>
                         <p>已售 6.9万 件</p>
                         </dt>
-                        </dl>
+                        </dl> -->
 
                     </div>
                 </div>
@@ -809,119 +811,7 @@
                         <img src="https://img02.hua.com/pc/pimg/home/home_floor_song.jpg" alt="">
                         <p>永生花专区 ></p>
                     </div>
-                    <div>
-                        <dl>
-                            <dd>
-                                <img src="https://img01.hua.com/uploadpic/newpic/9012452.jpg_220x240.jpg" alt="">
-                            </dd>
-                            <dt>
-                                    <p>送长辈 · 韩式系列/一路向阳
-
-                                    </p>
-                                    <p>
-                                        <span>￥</span><span>296</span>
-                        </p>
-                        <p>已售 6.9万 件</p>
-                        </dt>
-                        </dl>
-                        <dl>
-                            <dd>
-                                <img src="https://img01.hua.com/uploadpic/newpic/9012452.jpg_220x240.jpg" alt="">
-                            </dd>
-                            <dt>
-                                    <p>送长辈 · 韩式系列/一路向阳
-
-                                    </p>
-                                    <p>
-                                        <span>￥</span><span>296</span>
-                        </p>
-                        <p>已售 6.9万 件</p>
-                        </dt>
-                        </dl>
-                        <dl>
-                            <dd>
-                                <img src="https://img01.hua.com/uploadpic/newpic/9012452.jpg_220x240.jpg" alt="">
-                            </dd>
-                            <dt>
-                                    <p>送长辈 · 韩式系列/一路向阳
-
-                                    </p>
-                                    <p>
-                                        <span>￥</span><span>296</span>
-                        </p>
-                        <p>已售 6.9万 件</p>
-                        </dt>
-                        </dl>
-                        <dl>
-                            <dd>
-                                <img src="https://img01.hua.com/uploadpic/newpic/9012452.jpg_220x240.jpg" alt="">
-                            </dd>
-                            <dt>
-                                    <p>送长辈 · 韩式系列/一路向阳
-
-                                    </p>
-                                    <p>
-                                        <span>￥</span><span>296</span>
-                        </p>
-                        <p>已售 6.9万 件</p>
-                        </dt>
-                        </dl>
-                        <dl>
-                            <dd>
-                                <img src="https://img01.hua.com/uploadpic/newpic/9012452.jpg_220x240.jpg" alt="">
-                            </dd>
-                            <dt>
-                                    <p>送长辈 · 韩式系列/一路向阳
-
-                                    </p>
-                                    <p>
-                                        <span>￥</span><span>296</span>
-                        </p>
-                        <p>已售 6.9万 件</p>
-                        </dt>
-                        </dl>
-                        <dl>
-                            <dd>
-                                <img src="https://img01.hua.com/uploadpic/newpic/9012452.jpg_220x240.jpg" alt="">
-                            </dd>
-                            <dt>
-                                    <p>送长辈 · 韩式系列/一路向阳
-
-                                    </p>
-                                    <p>
-                                        <span>￥</span><span>296</span>
-                        </p>
-                        <p>已售 6.9万 件</p>
-                        </dt>
-                        </dl>
-                        <dl>
-                            <dd>
-                                <img src="https://img01.hua.com/uploadpic/newpic/9012452.jpg_220x240.jpg" alt="">
-                            </dd>
-                            <dt>
-                                    <p>送长辈 · 韩式系列/一路向阳
-
-                                    </p>
-                                    <p>
-                                        <span>￥</span><span>296</span>
-                        </p>
-                        <p>已售 6.9万 件</p>
-                        </dt>
-                        </dl>
-                        <dl>
-                            <dd>
-                                <img src="https://img01.hua.com/uploadpic/newpic/9012452.jpg_220x240.jpg" alt="">
-                            </dd>
-                            <dt>
-                                    <p>送长辈 · 韩式系列/一路向阳
-
-                                    </p>
-                                    <p>
-                                        <span>￥</span><span>296</span>
-                        </p>
-                        <p>已售 6.9万 件</p>
-                        </dt>
-                        </dl>
+                    <div class="forever">
 
                     </div>
                 </div>
@@ -1060,47 +950,7 @@
                         </div>
 
                     </div>
-                    <div class="cakePro">
-                        <dl>
-                            <dd><img src="https://img01.hua.com/uploadpic/newpic/5602062.jpg_220x240.jpg" alt=""></dd>
-                            <dt>
-                                <h4>幸福西饼蛋糕 · 花镜(12块)【无贺卡、巧克力牌、蜡烛、生日帽】</h4>
-                                <p><span>￥</span><span>179</span></p>
-                                <p>已售 489 件</p>
-                            </dt>
-                        </dl>
-                        <dl>
-                            <dd><img src="https://img01.hua.com/uploadpic/newpic/5602062.jpg_220x240.jpg" alt=""></dd>
-                            <dt>
-                                <h4>幸福西饼蛋糕 · 花镜(12块)【无贺卡、巧克力牌、蜡烛、生日帽】</h4>
-                                <p><span>￥</span><span>179</span></p>
-                                <p>已售 489 件</p>
-                            </dt>
-                        </dl>
-                        <dl>
-                            <dd><img src="https://img01.hua.com/uploadpic/newpic/5602062.jpg_220x240.jpg" alt=""></dd>
-                            <dt>
-                                <h4>幸福西饼蛋糕 · 花镜(12块)【无贺卡、巧克力牌、蜡烛、生日帽】</h4>
-                                <p><span>￥</span><span>179</span></p>
-                                <p>已售 489 件</p>
-                            </dt>
-                        </dl>
-                        <dl>
-                            <dd><img src="https://img01.hua.com/uploadpic/newpic/5602062.jpg_220x240.jpg" alt=""></dd>
-                            <dt>
-                                <h4>幸福西饼蛋糕 · 花镜(12块)【无贺卡、巧克力牌、蜡烛、生日帽】</h4>
-                                <p><span>￥</span><span>179</span></p>
-                                <p>已售 489 件</p>
-                            </dt>
-                        </dl>
-                        <dl>
-                            <dd><img src="https://img01.hua.com/uploadpic/newpic/5602062.jpg_220x240.jpg" alt=""></dd>
-                            <dt>
-                                <h4>幸福西饼蛋糕 · 花镜(12块)【无贺卡、巧克力牌、蜡烛、生日帽】</h4>
-                                <p><span>￥</span><span>179</span></p>
-                                <p>已售 489 件</p>
-                            </dt>
-                        </dl>
+                    <div class="cakePro" id="cakeItem">
                     </div>
                 </div>
             </div>
@@ -1110,7 +960,7 @@
                 <div class="presents clearFix">
                     <h3>
                         <p><span>礼品</span><span>给她·最美好的礼物</span></p>
-                        <p>更多蛋糕 ></p>
+                        <p>更多礼品 ></p>
                     </h3>
                     <div class="presentCon">
                         <div class="presentList clearFix">
@@ -1183,8 +1033,8 @@
 
 
                         </div>
-                        <div class="presentPro1">
-                            <dl>
+                        <div class="presentPro1" id="p1">
+                            <!-- <dl>
                                 <dd><img src="https://img01.hua.com/uploadpic/newpic/5602062.jpg_220x240.jpg" alt=""></dd>
                                 <dt>
                                 <h4>幸福西饼蛋糕 · 花镜(12块)【无贺卡、巧克力牌、蜡烛、生日帽】</h4>
@@ -1223,10 +1073,10 @@
                                 <p><span>￥</span><span>179</span></p>
                                 <p>已售 489 件</p>
                             </dt>
-                            </dl>
+                            </dl> -->
                         </div>
-                        <div class="presentPro1">
-                            <dl>
+                        <div class="presentPro1" id="p2">
+                            <!-- <dl>
                                 <dd><img src="https://img01.hua.com/uploadpic/newpic/5602062.jpg_220x240.jpg" alt=""></dd>
                                 <dt>
                                 <h4>幸福西饼蛋糕 · 花镜(12块)【无贺卡、巧克力牌、蜡烛、生日帽】</h4>
@@ -1265,7 +1115,7 @@
                                 <p><span>￥</span><span>179</span></p>
                                 <p>已售 489 件</p>
                             </dt>
-                            </dl>
+                            </dl> -->
                         </div>
                     </div>
                 </div>
@@ -1283,7 +1133,7 @@
                         <ul class="clearFix">
                             <li>
                                 <div class="text">
-                                    <p><i></i><span>江*生</span></p>
+                                    <p><img src="https://img02.hua.com/pc/assets/img/avatar_default_04.jpg"><span>江*生</span></p>
                                     <p>花非常漂亮，实物跟图片一样</p>
                                     <p>北京朝阳区</p>
                                     <p>2020-12-09</p>
@@ -1316,9 +1166,9 @@
                             </li>
                             <li>
                                 <div class="text">
-                                    <p><i></i><span>江*生</span></p>
-                                    <p>花非常漂亮，实物跟图片一样</p>
-                                    <p>北京朝阳区</p>
+                                    <p><img src="https://thirdwx.qlogo.cn/mmopen/vi_32/ibia4Bic8zJdUvfoyGsibsgy628NKeR7icWEF4HiajTckNTZz7H4emic7Y2aXoc3icmYEVBcZGH28FNIsuKGxhzRZk1L5A/132" alt=""><span>张*洁</span></p>
+                                    <p>花很好看 很准时</p>
+                                    <p>广东深圳市福田区</p>
                                     <p>2020-12-09</p>
                                 </div>
                                 <div class="imgItem">
@@ -1331,10 +1181,32 @@
                         <ul class="clearFix">
                             <li>
                                 <div class="text">
-                                    <p><i></i><span>江*生</span></p>
-                                    <p>花非常漂亮，实物跟图片一样</p>
-                                    <p>北京朝阳区</p>
-                                    <p>2020-12-09</p>
+                                    <p><img src="https://thirdwx.qlogo.cn/mmopen/vi_32/5kqiagPSQk1eO4IV73gNNWW0UQB9jUKNsGlK8FqtUkp9iaI7qCSveNlzFenaZdRXDjOXcN127t5CjciaUUIFzaxJA/132" alt=""><span>耿*媛</span></p>
+                                    <p>很好看，朋友一收到就给我拍了照片</p>
+                                    <p>上海普陀区</p>
+                                    <p>2020-12-05</p>
+                                </div>
+                                <div class="imgItem">
+                                    <img src="https://img.hua.com/reviewpic/m/2020/12/08/8c9869bf39444a41bccd80c6b4088940.jpg" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="text">
+                                    <p><img src="https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKrEGU8yaic9mGQfK0OEUbe2VOgPjibFZ8PzBa2LEzKhWjlCzhNyDzO17vVNf8FmcPO5IVobP4DP5eA/132" alt=""><span>欣*</span></p>
+                                    <p>将面条与蛋糕融为一体的蛋糕造型太有创意了了，收到这样的...</p>
+                                    <p>上海长宁区</p>
+                                    <p>2020-12-08</p>
+                                </div>
+                                <div class="imgItem">
+                                    <img src="https://img02.hua.com/pc/assets/img/avatar_default_06.jpg" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="text">
+                                    <p><img src="https://img02.hua.com/pc/assets/img/avatar_default_06.jpg" alt=""><span>张*蝶</span></p>
+                                    <p>满意，小清新</p>
+                                    <p>重庆南岸区</p>
+                                    <p>2020-12-06</p>
                                 </div>
                                 <div class="imgItem">
                                     <img src="https://img.hua.com/reviewpic/app/2020/12/09/6eabaaafc2194315bb5fced7f8c9499e.jpeg" alt="">
@@ -1342,32 +1214,10 @@
                             </li>
                             <li>
                                 <div class="text">
-                                    <p><i></i><span>江*生</span></p>
-                                    <p>花非常漂亮，实物跟图片一样</p>
-                                    <p>北京朝阳区</p>
-                                    <p>2020-12-09</p>
-                                </div>
-                                <div class="imgItem">
-                                    <img src="https://img.hua.com/reviewpic/app/2020/12/09/6eabaaafc2194315bb5fced7f8c9499e.jpeg" alt="">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="text">
-                                    <p><i></i><span>江*生</span></p>
-                                    <p>花非常漂亮，实物跟图片一样</p>
-                                    <p>北京朝阳区</p>
-                                    <p>2020-12-09</p>
-                                </div>
-                                <div class="imgItem">
-                                    <img src="https://img.hua.com/reviewpic/app/2020/12/09/6eabaaafc2194315bb5fced7f8c9499e.jpeg" alt="">
-                                </div>
-                            </li>
-                            <li>
-                                <div class="text">
-                                    <p><i></i><span>江*生</span></p>
-                                    <p>花非常漂亮，实物跟图片一样</p>
-                                    <p>北京朝阳区</p>
-                                    <p>2020-12-09</p>
+                                    <p><img src="https://qzapp.qlogo.cn/qzapp/101222130/FA8C0D81A4697248DE5E554A835EDD7E/100" alt=""><span>.*</span></p>
+                                    <p>送货及时，服务细心周到，蛋糕很好吃</p>
+                                    <p>广东深圳市罗湖区</p>
+                                    <p>2020-12-05</p>
                                 </div>
                                 <div class="imgItem">
                                     <img src="https://img.hua.com/reviewpic/app/2020/12/09/6eabaaafc2194315bb5fced7f8c9499e.jpeg" alt="">
@@ -1476,31 +1326,171 @@
                 </div>
 
                 <!-- 服务专区 -->
-                <div class="sevBox">
+                <div class="sevBox clearFix">
+                    <div class="sevDiv ">
+                        <h4>客户服务</h4>
+                        <ul>
+                            <li>服务声明</li>
+                            <li>常见问题</li>
+                            <li>售后服务</li>
+                            <li>配送说明</li>
+                            <li>配送范围</li>
+                            <li>订单查询</li>
+                            <li>取消订单</li>
+                            <li>补交货款</li>
+                            <li>隐私条款</li>
+                            <li>安全条款</li>
+                        </ul>
+                    </div>
+                    <div class="sevDiv ">
+                        <h4>热门资讯</h4>
+                        <ul>
+                            <li>中国鲜花礼品网购物流程</li>
+                            <li>中国鲜花礼品网订购演示</li>
+                            <li>鲜花网能配送哪些城市?</li>
+                            <li>鲜花售后服务是怎么样的?</li>
+                            <li>我应该提前多久预订鲜花?</li>
+                        </ul>
+                    </div>
+                    <div class="sevDiv ">
+                        <h4>同城鲜花专区</h4>
+                        <ul>
+                            <li>深圳鲜花</li>
+                            <li>广州鲜花</li>
+                            <li>上海鲜花</li>
+                            <li>北京鲜花</li>
+                            <li>天津鲜花</li>
+                            <li>重庆鲜花</li>
+                            <li>成都鲜花</li>
+                            <li>西安鲜花</li>
+                            <li>武汉鲜花</li>
+                            <li>南京鲜花</li>
+                            <li>厦门鲜花</li>
+                            <li>更多城市</li>
+                        </ul>
+                    </div>
+                    <div class="sevDiv ">
+                        <h4>联系我们</h4>
+                        <ul>
+                            <li>全国订购热线:400-889-8188(免长途费)</li>
+                            <li>E-mail: kefu@hua.com</li>
+                            <li>7x24小时在线订购</li>
+                            <li> 客服工作时间:8:30-21:00</li>
+                            <li>
+                                <button><i class="iconfont icon-kefu"></i>在线客服</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="codes">
+                        <dl>
+                            <dd><img src="https://img02.hua.com/pc/pimg/home/app_download_qrcode.png" alt=""></dd>
+                            <dt>扫码下载手机版</dt>
+
+
+                        </dl>
+                    </div>
+                    <div class="codes">
+                        <dl>
+                            <dd><img src="https://img02.hua.com/pc/pimg/home/wxguanjia_qrcode.png" alt=""></dd>
+                            <dt>关注公众号有惊喜</dt>
+                        </dl>
+                    </div>
+
+
+
+
 
                 </div>
             </div>
+        </div>
+
+        <!-- 页面底部 -->
+        <div class="bottom">
+            <div class="bottomCon">
+                <ul class="clearFix">
+                    <li><a href="">首页</a> </li>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="">媒体报道</a></li>
+                    <li><a href="">联系方式</a></li>
+                    <li><a href="">企业团购</a></li>
+                    <li><a href="">花店入驻</a></li>
+                    <li><a href="">友情链接</a></li>
+                    <li><a href="">在线补款</a></li>
+                    <li><a href="">为什么选择中国鲜花礼品网</a></li>
+                </ul>
+                <div class="icon">
+                    <img src="https://img02.hua.com/pc/assets/img/slogan.png" alt="">
+                    <a href=""><img src="https://img02.hua.com/pc/assets/img/100.jpg" alt=""></a>
+                    <a href=""><img src="https://img02.hua.com/pc/assets/img/bico1.jpg" alt=""></a>
+                    <a href=""><img src="https://szcert.ebs.org.cn/Images/govIcon.gif" alt=""></a>
+                </div>
+                <div class="copy">
+                    <p><span>中国花卉协会会员</span>
+                        <span>中国电子商务协会会员 </span>
+                        <span class="s44">ICP经营许可证：粤B2-20050744</span>
+                        <span> 粤ICP备09171662号</span>
+                        <span>粤公网安备44030502000373号</span>
+                        <span>Copyright&copy;2005-2020</span></p>
+                    <p>
+                        www.hua.com 深圳市百易信息技术有限公司
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 右边固定菜单栏 -->
+        <ul class="ulMenu">
+            <li>
+                <i class="iconfont icon-shouji"></i>
+                <p>APP</p>
+            </li>
+            <li>
+                <i class="iconfont icon-icon-"></i>
+                <p>购物车</p>
+            </li>
+            <li>
+                <i class="iconfont icon-kefu"></i>
+                <p>在线客服</p>
+            </li>
+            <li>
+                <i class="iconfont icon-icon_dianhua"></i>
+                <p>联系电话</p>
+            </li>
+            <li>
+                <i class="iconfont icon-yijianfankui"></i>
+                <p>意见反馈</p>
+            </li>
+            <li>
+                <i class="iconfont icon-huidingbu"></i>
+                <p>回顶部</p>
+            </li>
+        </ul>
+    </div>
 
 
-            <script>
-                var swiper = new Swiper(
-                    '.swiper-container', {
-                        cssMode: true,
-                        navigation: {
-                            nextEl: '.swiper-button-next',
-                            prevEl: '.swiper-button-prev',
-                        },
-                        pagination: {
-                            el: '.swiper-pagination'
-                        },
-                        mousewheel: true,
-                        keyboard: true,
-                        autoplay: true,
-                        loop: true
-                    }
 
-                );
-            </script>
+
+    <script>
+        var swiper = new Swiper(
+            '.swiper-container', {
+                cssMode: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination'
+                },
+                mousewheel: true,
+                keyboard: true,
+                autoplay: true,
+                loop: true
+            }
+
+        );
+    </script>
+    <script src="../js/index.js"></script>
 </body>
 
 </html>

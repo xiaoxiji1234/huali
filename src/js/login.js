@@ -24,7 +24,7 @@ let emailReg = /^[a-zA-Z0-9]+([-_.][a-zA-Z0-9]+)*@[a-zA-Z0-9]+([-_.][a-zA-Z0-9]+
 
 $('#loginBtn').click(function() {
     let e = window.event
-    console.log($("#tel").val());
+        // console.log($("#tel").val());
     e.preventDefault()
     if (telReg.test($("#tel").val())) {
         let tel = $("#tel").val()

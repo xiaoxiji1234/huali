@@ -1,6 +1,7 @@
 @charset "UTF-8";
 .box {
   width: 100%;
+  position: relative;
 }
 
 .box .top {
@@ -177,7 +178,7 @@
   border: 1px solid #ccc;
   border-top: 0;
   display: none;
-  z-index: 55;
+  z-index: 60;
 }
 
 .box .top .topHeader .weiBox p {
@@ -198,7 +199,7 @@
   border: 1px solid #ccc;
   border-top: 0;
   display: none;
-  z-index: 55;
+  z-index: 60;
 }
 
 .box .top .topHeader .appBox p {
@@ -805,6 +806,10 @@
   margin-left: 16px;
 }
 
+.box .content .loveBox .loveFlower div:last-child dl dd {
+  width: 100%;
+}
+
 .box .content .loveBox .loveFlower div:last-child dl dd img {
   width: 100%;
 }
@@ -1035,6 +1040,10 @@
 .box .content .immortalBox .immortalFlower div:last-child dl dt p:first-child {
   font-size: 16px;
   color: #71797f;
+  overflow: hidden;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .box .content .immortalBox .immortalFlower div:last-child dl dt p:nth-of-type(2) {
@@ -1441,13 +1450,10 @@
   width: 138px;
 }
 
-.box .content .evaBox .evl .evlList ul li .text p i {
-  display: inline-block;
+.box .content .evaBox .evl .evlList ul li .text p img {
   width: 25px;
   height: 25px;
   border-radius: 50% 50%;
-  background: url("https://img02.hua.com/pc/assets/img/avatar_default_04.jpg");
-  background-size: 100%, 100%;
 }
 
 .box .content .evaBox .evl .evlList ul li .text p span {
@@ -1597,4 +1603,151 @@
 
 .box .content .consultBox .chBox .ch2 li:nth-of-type(4) i {
   background-position: -350px -136px;
+}
+
+.box .content .consultBox .sevBox {
+  width: 1215px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.box .content .consultBox .sevBox div h4 {
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.box .content .consultBox .sevBox div ul {
+  width: 200px;
+}
+
+.box .content .consultBox .sevBox div ul li {
+  font-size: 12px;
+  color: #71797f;
+  float: left;
+  margin-right: 20px;
+  cursor: pointer;
+  line-height: 24px;
+}
+
+.box .content .consultBox .sevBox div ul li:hover {
+  color: #ff481e;
+}
+
+.box .content .consultBox .sevBox div ul li button {
+  width: 100px;
+  height: 32px;
+  border: 0;
+  outline: 0;
+  background: #ff481e;
+  border-radius: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.box .content .consultBox .sevBox div ul li button i {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.box .content .consultBox .sevBox .codes dl dd img {
+  width: 120px;
+  height: 120px;
+}
+
+.box .content .consultBox .sevBox .codes dl dt {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #232628;
+}
+
+.box .bottom {
+  width: 100%;
+  background: #232628;
+}
+
+.box .bottom .bottomCon {
+  width: 1215px;
+  margin: 0 auto;
+}
+
+.box .bottom .bottomCon ul li {
+  float: left;
+  padding: 34px 0;
+}
+
+.box .bottom .bottomCon ul li a {
+  font-size: 14px;
+  color: #737373;
+  padding: 0 30px;
+  border-left: 2px solid #dbd9d9;
+}
+
+.box .bottom .bottomCon ul li:first-child a {
+  border-left: 0;
+}
+
+.box .bottom .bottomCon .icon {
+  width: 100%;
+  text-align: center;
+}
+
+.box .bottom .bottomCon .icon a img {
+  margin-right: 10px;
+}
+
+.box .bottom .bottomCon .icon a:last-child img {
+  width: 35px;
+  height: 49px;
+}
+
+.box .bottom .bottomCon .copy {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 30px;
+  color: #737373;
+}
+
+.box .bottom .bottomCon .copy span {
+  padding: 0 5px;
+}
+
+.box .bottom .bottomCon .copy .s44 {
+  border-right: 2px solid #d9e0e9;
+}
+
+.box .ulMenu {
+  position: absolute;
+  right: 70px;
+  top: 720px;
+  z-index: 55;
+  background: #fff;
+}
+
+.box .ulMenu li {
+  width: 60px;
+  height: 50px;
+  border: 1px solid #e9ecf0;
+  text-align: center;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.box .ulMenu li:hover {
+  color: #ff481e;
+}
+
+.box .ulMenu li:hover i {
+  color: #ff481e;
+}
+
+.box .ulMenu li i {
+  font-size: 20px;
+  color: #a1a7ab;
+}
+
+.box .ulMenu li p {
+  font-size: 12px;
 }
