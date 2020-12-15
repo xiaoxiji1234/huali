@@ -329,7 +329,6 @@
 .box .content {
   width: 100%;
   min-height: 300px;
-  background: #f2f2f2;
   position: relative;
 }
 
@@ -604,13 +603,13 @@
 
 .box .content .itemBox .info .meUl li {
   float: left;
-  width: 100px;
+  width: 200px;
   height: 50px;
   text-align: center;
   line-height: 50px;
   font-size: 16px;
   color: #1a1309;
-  margin-right: 100px;
+  margin-right: 20px;
 }
 
 .box .content .itemBox .info .meUl li span {
@@ -628,12 +627,12 @@
   padding: 20px 50px;
 }
 
-.box .content .itemBox .detilItem .detilTop div {
+.box .content .itemBox .detilItem .detilTop .h4 {
   float: left;
   font-size: 14px;
 }
 
-.box .content .itemBox .detilItem .detilTop div h4 {
+.box .content .itemBox .detilItem .detilTop .h4 h4 {
   text-align: center;
   font-weight: bold;
   line-height: 70px;
@@ -642,20 +641,18 @@
   padding-right: 50px;
 }
 
-.box .content .itemBox .detilItem .detilTop div p span:first-child {
+.box .content .itemBox .detilItem .detilTop .itIn p span:first-child {
   color: #6a7274;
   margin-right: 20px;
-}
-
-.box .content .itemBox .detilItem .detilTop div:last-child {
-  margin-left: 24px;
+  margin-left: 50px;
 }
 
 .box .content .itemBox .detilItem .detail-product-content {
   width: 1215px;
   margin: 0 auto;
+  padding: 40px 115px 95px;
   text-align: center;
-  padding-bottom: 50px;
+  background: none;
 }
 
 .box .content .itemBox .detilItem .detail-product-content .point-title {
@@ -675,6 +672,10 @@
   width: 686px;
   margin: 0 auto;
   font-size: 12px;
+}
+
+.box .content .itemBox .detilItem .detail-product-content .point-body img {
+  vertical-align: middle;
 }
 
 .box .bottom {

@@ -1,6 +1,6 @@
 <?php
 
-    $uid=1;
+    $uid=$_GET['uid'];
     # 链接数据库
     $con = mysqli_connect('localhost','root','123456','hua');
   

@@ -16,7 +16,7 @@
     
     $sql4="SELECT COUNT(*) `id` FROM `products`";
 
-    if($key=='undefined'){
+    if($key=='undefined'||$key=='全部'){
         $res2 = mysqli_query($con,$sql3);
         $arr2=array();
         $row2=mysqli_fetch_assoc($res2);

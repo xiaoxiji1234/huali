@@ -95,7 +95,7 @@ function urlObj(url) {
     arr.forEach(function(item) {
         var arr2 = item.split("=")
         obj[arr2[0]] = arr2[1]
-        console.log(obj);
+            // console.log(obj);
 
     })
     return obj
