@@ -37,7 +37,8 @@ $('#loginBtn').click(function() {
             }
         }).then(function(res) {
             if (JSON.parse(res).code) {
-                alert('登录成功')
+                setCookie('userName', tel)
+                location.href = '../html/i.html'
             } else {
                 alert('用户名或密码错误')
             }
@@ -53,7 +54,8 @@ $('#loginBtn').click(function() {
             }
         }).then(function(res) {
             if (JSON.parse(res).code) {
-                alert('登录成功')
+                setCookie('userName', email)
+                location.href = '../html/i.html'
             } else {
                 alert('用户名或密码错误')
             }

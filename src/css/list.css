@@ -276,6 +276,211 @@
   font-size: 24px;
 }
 
+.box .content .navBox {
+  width: 100%;
+  background: #fe7a24;
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.box .content .navBox .nav {
+  width: 1215px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.box .content .navBox .nav .all {
+  width: 260px;
+}
+
+.box .content .navBox .nav .all h3 {
+  font-weight: bold;
+  background: #ff6a00;
+  padding: 0 15px;
+}
+
+.box .content .navBox .nav .all h3 .icon-xiala {
+  float: right;
+  vertical-align: middle;
+}
+
+.box .content .navBox .nav .all .allNone {
+  background: #fff;
+  border: 1px #fe6a00 solid;
+  padding: 10px 15px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 555;
+  display: none;
+}
+
+.box .content .navBox .nav .all .allNone h4 {
+  font-weight: bold;
+  font-size: 18px;
+  color: #ff6a00;
+  font-weight: bold;
+}
+
+.box .content .navBox .nav .all .allNone ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.box .content .navBox .nav .all .allNone ul li {
+  font-weight: normal;
+  font-size: 14px;
+  color: #606060;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.box .content .navBox .nav .all .allNone ul li:hover {
+  color: #ff6a00;
+}
+
+.box .content .navBox .nav .navUl li {
+  float: left;
+  padding: 0 22px;
+  cursor: pointer;
+}
+
+.box .content .navBox .nav .navUl li:hover {
+  background: #ff6a00;
+}
+
+.box .content .topImg {
+  margin-top: 10px;
+  width: 1215px;
+  margin: 0 auto;
+}
+
+.box .content .topImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.box .content .seBox {
+  width: 1215px;
+  margin: 0 auto;
+  line-height: 45px;
+  color: #233333;
+  border-bottom: 1px solid #484848;
+}
+
+.box .content .seBox button {
+  border: 0;
+  outline: 0;
+  margin-right: 20px;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.box .content .seBox button span {
+  display: inline-block;
+  height: 45px;
+  margin-left: 5px;
+  transform: translateY(5px);
+}
+
+.box .content .seBox button span i {
+  color: #233333;
+  display: block;
+  font-size: 10px;
+}
+
+.box .content .seBox .clickBtn {
+  color: #ff6a00;
+}
+
+.box .content .classify {
+  box-sizing: border-box;
+  height: 65px;
+  line-height: 65px;
+  margin: 0 auto;
+  width: 1215px;
+  background: #f5f5f5;
+  margin-bottom: 5px;
+  padding-left: 18px;
+}
+
+.box .content .classify span {
+  font-size: 14px;
+  color: #232323;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.box .content .classify span:first-child {
+  font-size: 14px;
+  color: #606060;
+  margin-right: 45px;
+}
+
+.box .content .classify .actSpan {
+  color: #fe7a24;
+}
+
+.box .content .proBox {
+  width: 1215px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.box .content .proBox dl {
+  width: 285px;
+  text-align: center;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+
+.box .content .proBox dl dd {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.box .content .proBox dl dd img {
+  width: 100%;
+}
+
+.box .content .proBox dl dt h5 {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 30px;
+  margin-bottom: 10px;
+  width: 285px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.box .content .proBox dl dt p {
+  font-size: 12px;
+  color: #233333;
+  margin-bottom: 10px;
+}
+
+.box .content .proBox dl dt p:nth-of-type(2) {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.box .content .proBox dl:hover {
+  box-shadow: 1px 1px 3px 2px #ccc;
+}
+
 .box .bottom {
   width: 1215px;
   margin: 0 auto;

@@ -89,13 +89,13 @@ function urlObj(url) {
         // console.log(res);
         // 把字符串分割成数组
     var arr = res.split("&");
-    console.log(arr);
+    // console.log(arr);
     // 循环数组，拿到数组中的每一个数据，以“=”分割
     var obj = {} //定义一个空对象
     arr.forEach(function(item) {
         var arr2 = item.split("=")
         obj[arr2[0]] = arr2[1]
-            // console.log(obj);
+        console.log(obj);
 
     })
     return obj

@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/list.css">
     <link rel="stylesheet" href="../ststic/iconfont/iconfont.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2252304_hug8p3qxps5.css">
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/list.css">
     <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../../node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="../js/pagination.js"></script>
     <script src="../js/utils.js"></script>
 </head>
 
@@ -62,8 +65,10 @@
 
             </div>
         </div>
-        <div class="logo">
-            <h1><img src="../ststic/images/logo_03.jpg" alt=""></h1>
+        <div class="logo clearFix">
+            <h1>
+                <a href="../html/i.html"><img src="../ststic/images/logo_03.jpg" alt=""></a>
+            </h1>
             <div class="search">
                 <input type="text" placeholder="商品关键词"><button>搜索</button>
             </div>
@@ -72,12 +77,113 @@
                 <span class="links"><i class="iconfont icon-kefu"></i>在线客服</span>
             </div>
         </div>
-        <div class="content clearFix">
+        <div class="content">
+
+            <!-- 导航栏 -->
+            <div class="navBox">
+                <div class="nav clearFix">
+                    <div class="all" id="all">
+                        <h3>全部商品导购<i class="iconfont icon-xiala"></i></h3>
+                        <div class="allNone">
+                            <h4>鲜花</h4>
+                            <ul class="">
+                                <li>爱情鲜花</li>
+                                <li>生日鲜花</li>
+                                <li>友情鲜花</li>
+                                <li>问候长辈</li>
+                                <li>祝贺鲜花</li>
+                                <li>婚庆鲜花</li>
+                                <li>探病慰问</li>
+                                <li>道歉鲜花</li>
+                                <li>开业花篮</li>
+                            </ul>
+                            <h4>永生花</h4>
+                            <ul>
+                                <li>经典花盒</li>
+                                <li>巨型玫瑰</li>
+                                <li>薰衣草</li>
+                                <li>永生瓶花</li>
+                                <li>特色永生花</li>
+                            </ul>
+                            <h4>礼品</h4>
+                            <ul>
+                                <li>泰国保鲜花</li>
+                                <li>音乐盒</li>
+                                <li>水晶内雕</li>
+                                <li>金箔花</li>
+                                <li>化妆镜</li>
+                                <li>香薰系列</li>
+                                <li>音乐睡枕</li>
+                                <li>花瓶</li>
+                                <li>相框</li>
+                                <li>卡通花束</li>
+                                <li>品牌公仔</li>
+                                <li>首饰</li>
+                                <li>Giftstalk精选</li>
+                                <li>创意礼品</li>
+                                <li>礼品卡</li>
+                                <li>多肉植物盆栽</li>
+                            </ul>
+                            <h4>绿植</h4>
+                            <ul>
+                                <li>绿色植物</li>
+                                <li>盆栽花卉</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="navUl">
+                        <li>首页</li>
+                        <li>鲜花</li>
+                        <li>永生花</li>
+                        <li>蛋糕</li>
+                        <li>礼品</li>
+                        <li>巧克力</li>
+                        <li>花语大全</li>
+                        <li>设计师臻选鲜花</li>
+                        <li>圣诞节鲜花礼物</li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <!-- 顶部图片 -->
+            <div class="topImg clearFix">
+                <img src="https://img02.hua.com/pc/Images/2017/ysh-top-banner.jpg" alt="">
+            </div>
+
+            <!-- 筛选按钮 -->
+            <div class="seBox">
+                <button class="clickBtn">综合</button>
+                <button>销量</button>
+                <button>价格<span><i class="iconfont icon-xiangshang"></i><i class="iconfont icon-xiangxia"></i></span></button>
+                <button>最新</button>
+            </div>
+
+            <!-- 分类 -->
+            <div class="classify">
+                <span>分类：</span>
+                <span class="actSpan">全部</span>
+                <span>鲜花</span>
+                <span>永生花</span>
+                <span>蛋糕</span>
+                <span>礼品</span>
+            </div>
+            <div class="classify">
+                <span>人群：</span>
+                <span>送恋人爱人</span>
+                <span>送父母长辈</span>
+                <span>送朋友同事</span>
+            </div>
+
+            <!-- 商品列表 -->
+            <div class="proBox" id="proBox">
+            </div>
+            <div class="page"></div>
 
         </div>
         <div class="bottom">
             <ul class="clearFix">
-                <li><a href="">首页</a> </li>
+                <li><a href="../html/i.html">首页</a> </li>
                 <li><a href="">关于我们</a></li>
                 <li><a href="">媒体报道</a></li>
                 <li><a href="">联系方式</a></li>
