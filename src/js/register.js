@@ -9,6 +9,8 @@ let verifyCode = new GVerify({
     length: 4
 });
 
+
+
 $('.reBtn').click(function() {
     let index = $(this).index()
     $('.reBtn').removeClass("activeBtn")
@@ -139,7 +141,7 @@ $('#registerEmail').validate({
             url: '../api/addUser.php',
             type: 'post',
             data: {
-                password: $("#password").val(),
+                password: $("#password1").val(),
                 email: $("#email").val()
             }
         }).then(function(res) {

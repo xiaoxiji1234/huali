@@ -10,6 +10,12 @@ show("#all", ".allNone")
 let k = urlObj(location.href)
 let keys = decodeURI(k.key);
 let len = 12
+let userName = getCookie("userName")
+if (!userName) {
+    $(".userName").html('你好，请<a href="../html/login.html">登录</a>')
+} else {
+    $(".userName").html(`你好，${userName}`)
+}
 
 list(keys)
 

@@ -4,16 +4,24 @@ show("#app", ".appBox")
 show("#severs", '.sever')
 show("#car", ".cars")
 
+let userName = getCookie("userName")
+if (!userName) {
+    $(".userName").html('你好，请<a href="../html/login.html">登录</a>')
+} else {
+    $(".userName").html(`你好，${userName}`)
+}
 
 let uid = urlObj(location.href)['uid']
-console.log(uid);
+
 
 // 获取数据
 $.get('../api/getItem.php', {
     uid: uid
 }, function(res) {
+    console.log(res);
     showData(res)
     changeImg()
+    car(res)
 }, 'json')
 
 
@@ -49,7 +57,7 @@ function showData(obj) {
             </p>
             <p><span>配送至</span>广州天河区</p>
             <p>现在下单，最快今天送达</p>
-            <p><button><i class="iconfont icon-icon-"></i>加入购物车</button><button>立刻购买</button><span><i class="iconfont icon-shoucang1"></i>收藏商品</span></p>
+            <p><button id="carBtn"><i class="iconfont icon-icon-"></i>加入购物车</button><button>立刻购买</button><span><i class="iconfont icon-shoucang1"></i>收藏商品</span></p>
         </div>
     </div>
     </div>
@@ -115,7 +123,7 @@ function showData(obj) {
             </p>
             <p><span>配送至</span>广州天河区</p>
             <p>现在下单，最快今天送达</p>
-            <p><button><i class="iconfont icon-icon-"></i>加入购物车</button><button>立刻购买</button><span><i class="iconfont icon-shoucang1"></i>收藏商品</span></p>
+            <p><button id="carBtn"><i class="iconfont icon-icon-"></i>加入购物车</button><button>立刻购买</button><span><i class="iconfont icon-shoucang1"></i>收藏商品</span></p>
         </div>
     </div>
     </div>
@@ -164,6 +172,19 @@ function changeImg() {
 }
 
 
+// 加入购物车
+function car(obj) {
+    $('#carBtn').click(function() {
+        if (!userName) {
+            location.href = '../html/login.html'
+            localStorage.setItem('url', location.href)
+            return
+        }
+        addCar(obj, userName)
+    })
+}
+
+
 
 
 
@@ -195,7 +216,25 @@ $(window).scroll(function() {
 
 
 
+async function addCar(obj, name) {
 
+    let res = await pAjax({
+        url: "../api/addCar.php",
+        data: {
+            proId: obj.proId,
+            userName: name,
+            proName: obj.proName,
+            proPrice: obj.proPrice,
+            originalCost: obj.originalCost,
+            imgUrl: obj.imgUrl,
+            num: 1,
+            type: obj.type
+        }
+    })
+    if (JSON.parse(res).code) {
+        alert("添加购物车成功！")
+    }
+}
 
 
 

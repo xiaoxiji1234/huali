@@ -4,6 +4,8 @@ show("#app", ".appBox")
 show("#severs", '.sever')
 show("#car", ".cars")
 
+let url = localStorage.getItem('url') || '../html/i.html'
+
 
 
 
@@ -24,7 +26,6 @@ let emailReg = /^[a-zA-Z0-9]+([-_.][a-zA-Z0-9]+)*@[a-zA-Z0-9]+([-_.][a-zA-Z0-9]+
 
 $('#loginBtn').click(function() {
     let e = window.event
-        // console.log($("#tel").val());
     e.preventDefault()
     if (telReg.test($("#tel").val())) {
         let tel = $("#tel").val()
@@ -38,7 +39,7 @@ $('#loginBtn').click(function() {
         }).then(function(res) {
             if (JSON.parse(res).code) {
                 setCookie('userName', tel)
-                location.href = '../html/i.html'
+                location.href = url
             } else {
                 alert('用户名或密码错误')
             }
@@ -55,7 +56,7 @@ $('#loginBtn').click(function() {
         }).then(function(res) {
             if (JSON.parse(res).code) {
                 setCookie('userName', email)
-                location.href = '../html/i.html'
+                location.href = url
             } else {
                 alert('用户名或密码错误')
             }

@@ -10,11 +10,17 @@ show("#forever", ".preserve")
 show("#cake", ".cake")
 show("#presented", ".present")
 
+let userName = getCookie("userName")
+if (!userName) {
+    $(".userName").html('你好，请<a href="../html/login.html">登录</a>')
+} else {
+    $(".userName").html(`你好，${userName}`)
+}
+
 
 //圣诞新品
 $.get('../api/getNew.php', 'get', function(res) {
     let row = JSON.parse(res);
-    // console.log(row);
     let str = ''
     row.forEach((itme) => {
         str += `<li uid=${itme.proId}>
@@ -27,12 +33,12 @@ $.get('../api/getNew.php', 'get', function(res) {
     </li>`
     });
     $(".newPro ul").html(str)
+    item()
 })
 
 // 爱情鲜花
 $.get('../api/getLove.php', 'get', function(res) {
     let row = JSON.parse(res);
-    // console.log(row);
     let str = ''
     row.forEach((itme) => {
         str += ` <dl uid=${itme.proId}>
@@ -51,6 +57,11 @@ $.get('../api/getLove.php', 'get', function(res) {
     </dl>`
     });
     $(".loveItem").html(str)
+    $(".loveItem dl").click(function() {
+        let uid = $(this).attr('uid');
+        console.log(uid);
+        location.href = `../html/detil.html?uid=${uid}`
+    })
 })
 
 // 送长辈
@@ -74,6 +85,11 @@ $.get('../api/getPar.php', 'get', function(res) {
     </dl>`
     });
     $(".elderItem").html(str)
+    $(".elderItem dl").click(function() {
+        let uid = $(this).attr('uid');
+        console.log(uid);
+        location.href = `../html/detil.html?uid=${uid}`
+    })
 })
 
 // 永生花
@@ -98,6 +114,11 @@ $.get('../api/getFor.php', 'get', function(res) {
     </dl>`
     });
     $(".forever").html(str)
+    $(".forever dl").click(function() {
+        let uid = $(this).attr('uid');
+        console.log(uid);
+        location.href = `../html/detil.html?uid=${uid}`
+    })
 })
 
 // 蛋糕专区
@@ -115,6 +136,11 @@ $.get('../api/getCake.php', 'get', function(res) {
     </dl>`
     });
     $("#cakeItem").html(str)
+    $("#cakeItem dl").click(function() {
+        let uid = $(this).attr('uid');
+        console.log(uid);
+        location.href = `../html/detil.html?uid=${uid}`
+    })
 
 })
 
@@ -136,6 +162,11 @@ $.get('../api/getPre.php', {
     </dl>`
     });
     $("#p1").html(str)
+    $(".presentPro1 dl").click(function() {
+        let uid = $(this).attr('uid');
+        console.log(uid);
+        location.href = `../html/detil.html?uid=${uid}`
+    })
 
 })
 $.get('../api/getPre.php', {
@@ -145,7 +176,7 @@ $.get('../api/getPre.php', {
     let row = JSON.parse(res);
     let str = ''
     row.forEach((item) => {
-        str += ` <dl uid=${item.proId}>
+        str += ` <dl uid=${item.proId} class="dlP">
         <dd><img src="${item.imgUrl}" alt=""></dd>
         <dt>
             <h4>${item.proName}</h4>
@@ -155,6 +186,11 @@ $.get('../api/getPre.php', {
     </dl>`
     });
     $("#p2").html(str)
+    $(".presentPro1 dl").click(function() {
+        let uid = $(this).attr('uid');
+        console.log(uid);
+        location.href = `../html/detil.html?uid=${uid}`
+    })
 
 })
 
@@ -183,7 +219,14 @@ $(window).scroll(function() {
     }
 });
 
+//点击商品进入详情页
+function item() {
+    $('.newPro ul li').click(function() {
+        let uid = $(this).attr('uid');
+        location.href = `../html/detil.html?uid=${uid}`
+    })
 
+}
 
 
 
