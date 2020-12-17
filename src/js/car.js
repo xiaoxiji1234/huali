@@ -38,7 +38,7 @@ function showData(arr) {
         conPan.innerHTML = `
         <div class="jumbotron">
                 <h1>购物车空空如也</h1>
-                <p><a class="btn btn-primary btn-lg" href="../html/i.html" role="button">去挑选商品</a></p>
+                <p><a class="btn btn-primary btn-lg" href="../html/index.html" role="button">去挑选商品</a></p>
             </div> 
         `
         return

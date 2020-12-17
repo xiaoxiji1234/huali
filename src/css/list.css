@@ -530,3 +530,37 @@
 .box .bottom .copy .s44 {
   border-right: 2px solid #d9e0e9;
 }
+
+.box .ulMenu {
+  position: absolute;
+  right: 70px;
+  top: 720px;
+  z-index: 90;
+  background: #fff;
+}
+
+.box .ulMenu li {
+  width: 60px;
+  height: 50px;
+  border: 1px solid #e9ecf0;
+  text-align: center;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.box .ulMenu li:hover {
+  color: #ff481e;
+}
+
+.box .ulMenu li:hover i {
+  color: #ff481e;
+}
+
+.box .ulMenu li i {
+  font-size: 20px;
+  color: #a1a7ab;
+}
+
+.box .ulMenu li p {
+  font-size: 12px;
+}

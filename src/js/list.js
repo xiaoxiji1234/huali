@@ -2,7 +2,6 @@
 show("#wei", ".weiBox")
 show("#app", ".appBox")
 show("#severs", '.sever')
-show("#car", ".cars")
 show("#all", ".allNone")
 
 
@@ -29,6 +28,7 @@ $('#classify span').click(function() {
     $('#classify span').removeClass('actSpan')
     $(this).addClass('actSpan')
     list(key2)
+    selects(key2)
 })
 
 //筛选按钮
@@ -49,27 +49,29 @@ function list(key) {
         len: len
     }, function(res) {
         let row = JSON.parse(res);
-        // console.log(res)
-        showData(row.list)
-        let page = document.querySelector(".page")
-        new Pagination(page, {
-            pageInfo: {
-                pagenum: 1, // 当前页数
-                pagesize: len, // 每页多少条
-                total: row.total, // 数据总数
-                totalpage: Math.ceil(row.total / len) // 页码总数
-            },
-            textInfo: {
-                first: '首页',
-                prev: '上一页',
-                list: '',
-                next: '下一页',
-                last: '末页'
-            },
-            change: function(num) {
-                show2(num, key)
-            }
-        })
+        if (row.code == 1) {
+            showData(row.list)
+            let page = document.querySelector(".page")
+            new Pagination(page, {
+                pageInfo: {
+                    pagenum: 1, // 当前页数
+                    pagesize: len, // 每页多少条
+                    total: row.total, // 数据总数
+                    totalpage: Math.ceil(row.total / len) // 页码总数
+                },
+                textInfo: {
+                    first: '首页',
+                    prev: '上一页',
+                    list: '',
+                    next: '下一页',
+                    last: '末页'
+                },
+                change: function(num) {
+                    show2(num, key)
+                }
+            })
+        }
+
     })
 }
 
@@ -80,29 +82,34 @@ function select(key) {
         len: len
     }, function(res) {
         let row = JSON.parse(res);
-        // console.log(res)
-        showData(row.list)
-        let page = document.querySelector(".page")
-        new Pagination(page, {
-            pageInfo: {
-                pagenum: 1, // 当前页数
-                pagesize: len, // 每页多少条
-                total: row.total, // 数据总数
-                totalpage: Math.ceil(row.total / len) // 页码总数
-            },
-            textInfo: {
-                first: '首页',
-                prev: '上一页',
-                list: '',
-                next: '下一页',
-                last: '末页'
-            },
-            change: function(num) {
-                show3(num, key)
-            }
-        })
+        if (row.code == 1) {
+            localStorage.setItem('select', res)
+            showData(row.list)
+            let page = document.querySelector(".page")
+            new Pagination(page, {
+                pageInfo: {
+                    pagenum: 1, // 当前页数
+                    pagesize: len, // 每页多少条
+                    total: row.total, // 数据总数
+                    totalpage: Math.ceil(row.total / len) // 页码总数
+                },
+                textInfo: {
+                    first: '首页',
+                    prev: '上一页',
+                    list: '',
+                    next: '下一页',
+                    last: '末页'
+                },
+                change: function(num) {
+                    show3(num, key)
+                }
+            })
+        }
+
     })
 }
+
+
 
 
 

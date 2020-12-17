@@ -4,7 +4,7 @@ show("#app", ".appBox")
 show("#severs", '.sever')
 show("#car", ".cars")
 
-let url = localStorage.getItem('url') || '../html/i.html'
+let url = localStorage.getItem('url') || '../html/index.html'
 
 
 
